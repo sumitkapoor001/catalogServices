@@ -15,6 +15,7 @@ public class MovieCatalogServiceApplication {
 	@LoadBalanced
 	public RestTemplate getRestTemplate() 
 	{
+		System.out.println("RestTemplate");
 		return new RestTemplate();
 	}
 	
